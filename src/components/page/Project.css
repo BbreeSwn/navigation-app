@@ -1,0 +1,51 @@
+.container{
+    margin-top: 20px;
+}
+.project-container{
+    display: grid;
+grid-template-columns: 2fr 2fr 2fr;
+margin-top: 20px;
+}
+
+.project-text a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 16px;
+border-radius: 5px;
+color: white;
+}
+
+.project-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    height: 60px;
+    
+}
+.project-text a:hover{
+    background: rgb(107, 255, 228);
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        margin-top: 20px;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .project-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 20px 20px 0 0; 
+        padding: 10px;
+    }
+    .project-text a{
+        font-size: 16px;
+    }
+}
