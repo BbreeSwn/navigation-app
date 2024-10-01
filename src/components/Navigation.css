@@ -1,0 +1,27 @@
+.nav-menu{
+    background: #121312;
+    width: 15%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    left: -100%;
+    transition: 850ms;
+}
+.nav-menu.active {
+    left:0;
+}
+
+/* for phone  */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        width: auto; /* ลดความกว้างของเมนูสำหรับโทรศัพท์ */
+        left: -100%; /* ทำให้เมนูแสดงทางด้านซ้าย */
+        transition: 350ms; /* ลดเวลาของ transition */
+        padding-right: 15px;
+    }
+    .nav-menu.active {
+        left:0;
+    }
+}
