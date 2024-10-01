@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaHome, FaWindowClose, FaUser,FaShoppingCart } from "react-icons/fa";
+import { FaWindowClose } from "react-icons/fa";
 import "./Navigation.css";
+import menuData from "../data/MenuData";
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -18,30 +19,19 @@ const Navigation = () => {
       </div>
       <nav className={showMenu ? "nav-menu active" : "nav-menu"}>
         <ul className="nav-menu-item">
-          <div className="navbar-toggle">
+          <li className="navbar-toggle">
             <Link to="#" className="menu-bar">
               <FaWindowClose onClick={toggleMenu} />
             </Link>
-          </div>
-          <li className="menu-text">
-            <Link to="#">
-              <FaHome />
-              <span>Home</span>
-            </Link>
-          </li>
-          <li className="menu-text">
-            <Link to="#">
-              <FaUser />
-              <span>User</span>
-            </Link>
-          </li>
-          <li className="menu-text">
-            <Link to="#">
-              <FaShoppingCart />
-              <span>Cart</span>
-            </Link>
           </li>
 
+          {menuData.map((menu, index) => {
+            return (
+              <li className="menu-text" key={index}>
+                <Link to={menu.path}>{menu.icon}<span>{menu.title}</span></Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </aside>
