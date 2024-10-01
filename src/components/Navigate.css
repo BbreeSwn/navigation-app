@@ -1,5 +1,5 @@
 .nav-menu{
-    background: #121312;
+    background: #121313;
     width: 25%;
     height: 100vh;
     display: flex;
@@ -55,7 +55,7 @@ padding: 0 16px;
 border-radius: 5px;
 }
 .menu-text a:hover{
-    background: orange;
+    background: rgba(101, 149, 166, 1);
 }
 span {
     margin-left: 16px;
@@ -63,7 +63,7 @@ span {
 
 
 /* for phone  */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .nav-menu {
         width: 125px; /* ลดความกว้างของเมนูสำหรับโทรศัพท์ */
         left: -100%; /* ทำให้เมนูแสดงทางด้านซ้าย */

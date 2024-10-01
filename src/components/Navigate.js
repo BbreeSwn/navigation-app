@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaWindowClose } from "react-icons/fa";
-import "./Navigation.css";
+import "./Navigate.css";
 import menuData from "../data/MenuData";
 
-const Navigation = () => {
+const NavigateMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => setShowMenu(!showMenu);
   return (
@@ -18,7 +18,7 @@ const Navigation = () => {
         </div>
       </div>
       <nav className={showMenu ? "nav-menu active" : "nav-menu"}>
-        <ul className="nav-menu-item">
+        <ul className="nav-menu-item" onClick={toggleMenu} >
           <li className="navbar-toggle">
             <Link to="#" className="menu-bar">
               <FaWindowClose onClick={toggleMenu} />
@@ -38,4 +38,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default NavigateMenu;

@@ -1,21 +1,17 @@
-import { FaHome,FaUser,FaShoppingCart } from "react-icons/fa"
+import { FaHome,FaUser,FaShoppingCart,FaReact  } from "react-icons/fa"
 
 const menuData = [
     {
-        title: 'Home',
+        title: 'Profile',
         path: '/',
-        icon:  <FaHome/>
-    },
-    {
-        title: 'Member',
-        path: '/member',
         icon:  <FaUser/>
     },
     {
-        title: 'Cart',
-        path: '/cart',
-        icon:  <FaShoppingCart/>
+        title: 'my Project',
+        path: '/project',
+        icon:  <FaReact />,
     },
+
 
 ]
 export default menuData
