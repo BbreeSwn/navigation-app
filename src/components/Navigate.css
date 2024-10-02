@@ -84,11 +84,11 @@ span {
         align-items: center;
     }
     .menu-bar{
-        font-size: 0.5rem;
+        font-size: 1rem;
         margin-left: 1rem;
     }
     .menu-text a{
-        font-size: 14px;
+        font-size: 12px;
     }
     .menu-text{
         display: flex;
