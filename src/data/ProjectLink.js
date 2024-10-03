@@ -49,6 +49,11 @@ const projectLink = [
     projectTitle: "Project 10",
     link: "https://swn-currency-exchange.netlify.app",
   },
+  {
+    projectId: 11,
+    projectTitle: "Image Carousel",
+    link: "https://swn-image-carousel.netlify.app/",
+  },
 ];
 
 export default projectLink;
