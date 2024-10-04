@@ -54,6 +54,16 @@ const projectLink = [
     projectTitle: "Image Carousel",
     link: "https://swn-image-carousel.netlify.app/",
   },
+  {
+    projectId: 11,
+    projectTitle: "Todo List",
+    link: "https://swn-todo-list.netlify.app/",
+  },
+  {
+    projectId: 11,
+    projectTitle: "Calculator App",
+    link: "https://swn-calculate-app.netlify.app/",
+  },
 ];
 
 export default projectLink;
