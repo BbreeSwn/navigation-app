@@ -63,7 +63,7 @@ span {
 
 
 /* for phone  */
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .nav-menu {
         width: 125px; /* ลดความกว้างของเมนูสำหรับโทรศัพท์ */
         left: -100%; /* ทำให้เมนูแสดงทางด้านซ้าย */
@@ -84,7 +84,7 @@ span {
         align-items: center;
     }
     .menu-bar{
-        font-size: 0.5rem;
+        font-size: 1rem;
         margin-left: 1rem;
     }
     .menu-text a{

@@ -1,4 +1,4 @@
-import { FaHome,FaUser,FaShoppingCart,FaReact  } from "react-icons/fa"
+import { FaUser,FaReact  } from "react-icons/fa"
 
 const menuData = [
     {

@@ -4,7 +4,8 @@
 .project-container{
     display: grid;
 grid-template-columns: 2fr 2fr 2fr;
-margin-top: 20px;
+margin-top: 25px;
+padding: 10px;
 }
 
 .project-text a{
@@ -30,9 +31,20 @@ color: white;
 }
 .project-text a:hover{
     background: rgb(107, 255, 228);
+    color: rgb(0, 157, 255);
+    transition: 300ms;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width:790px) {
+    .project-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 20px 20px 0 0; 
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px){
     .container{
         margin-top: 20px;
     }
@@ -41,11 +53,12 @@ color: white;
     }
     .project-container{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1ดพ;
         margin: 20px 20px 0 0; 
         padding: 10px;
     }
     .project-text a{
-        font-size: 16px;
+        font-size: 18px;
+        margin-top: 20px;
     }
 }
