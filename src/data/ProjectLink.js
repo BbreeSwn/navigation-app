@@ -69,6 +69,11 @@ const projectLink = [
     projectTitle: "Search Countries",
     link: "https://swn-search-filter.netlify.app/",
   },
+  {
+    projectId: 13,
+    projectTitle: "Foods menu",
+    link: "https://swn-menu-dropdown.netlify.app/",
+  },
 ];
 
 export default projectLink;
