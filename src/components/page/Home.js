@@ -1,4 +1,4 @@
-import p1 from '../../image/1.png'
+import p1 from '../../image/1.jpg'
 import p2 from '../../image/2.png'
 import p3 from '../../image/3.png'
 import p4 from '../../image/4.png'
