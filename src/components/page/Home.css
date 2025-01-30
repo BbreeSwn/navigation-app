@@ -1,23 +1,26 @@
-.img-container{
-    width: 90%;
-    height: 100%;
+.resume {
+    margin-top: 5%;
+}
+.main-container {
+    margin: 20px 0 20px 0;
+}
+.header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: 20px 0 0 80px 
-}
-img{
-    width: 75%;
-    margin: 10px;
 }
 
+
 @media (max-width: 780px){
-    .img-container{
-        margin: 10px 0 0 25px 
-    }
-    img{
-        width: 70%;
-        margin: 5px
-    }
+   
+    .header{
+
+            font-size: large;
+        }
+    .resume {
+        margin-top: 15%;
+        }
+        
+
 }

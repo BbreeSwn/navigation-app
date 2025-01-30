@@ -1,18 +1,26 @@
-import p1 from '../../image/1.jpg'
-import p2 from '../../image/2.png'
-import p3 from '../../image/3.png'
-import p4 from '../../image/4.png'
-import './Home.css'
+import { useState } from "react";
+import "./Home.css";
+import ResumeData from "../../data/ResumeData";
+import { SingleContent } from "../SingleContent";
 
 const Home = () => {
-  return (
-    <div className='img-container'>
-        <img src={p1} alt='p1' />
-        <img src={p2} alt='p2' />
-        <img src={p3} alt='p3' />
-        <img src={p4} alt='p4' />
-    </div>
-  )
-}
+  const [content, setContent] = useState(ResumeData);
 
-export default Home
+  return (
+    <main>
+      <div className="main-container">
+        <div className="header">
+          <h2>Thank you for visiting my profile!</h2>
+          <h2>I appreciate your time and interest.</h2>
+        </div>
+        <section className="resume">
+          {content.map((data) => {
+            return <SingleContent key={data.id} {...data} />;
+          })}
+        </section>
+      </div>
+    </main>
+  );
+};
+
+export default Home;
