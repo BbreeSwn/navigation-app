@@ -70,6 +70,11 @@ const projectLink = [
     projectTitle: "Blog app",
     link: "https://swn-blog-application.netlify.app/",
   },
+  {
+    projectId: 15,
+    projectTitle: "Infinite scroll",
+    link: "https://swn-infinite-scroll.netlify.app/"
+  }
 
 ];
 
